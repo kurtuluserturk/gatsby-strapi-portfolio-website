@@ -1,5 +1,6 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { FaCode, FaSketch, FaGamepad } from "react-icons/fa"
+
 export default [
   {
     id: 1,
@@ -15,8 +16,8 @@ export default [
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
-    title: "app design",
+    icon: <FaGamepad className="service-icon" />,
+    title: "game development",
     text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
   },
 ]
