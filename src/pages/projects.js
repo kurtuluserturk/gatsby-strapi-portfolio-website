@@ -2,10 +2,41 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
-// ...GatsbyImageSharpFluid
 
-const ProjectsPage = () => {
-  return <h2>projects page</h2>
+const ProjectsPage = ({ data: { allStrapiProjects: { nodes: projects } } }) => {  // This destructing is the same components/index. We can compare them to udnerstand.
+
+  return (
+    <Layout>
+      <section className="projects-page">
+        <Projects projects={projects} title="all projects" />   {/* We don't use showLink because it is unnecessary button for all projects page. */}
+      </section>
+    </Layout>
+  )
 }
+
+export const query = graphql`
+  {
+    allStrapiProjects {
+      nodes {
+        description
+        github
+        id
+        title
+        url
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        stack {
+          id
+          label
+        }
+      }
+    }
+  }
+`
 
 export default ProjectsPage
