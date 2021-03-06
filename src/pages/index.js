@@ -21,7 +21,7 @@ export default ({ data }) => {  // data comes from graphql query
       <Services />
       <Jobs />
       <Projects projects={projects} title="featured projects" showLink />
-      <Blogs blogs={blogs} title="blog" showLink />
+      <Blogs blogs={blogs} title="latest blog" showLink />
     </Layout>
   )
 }

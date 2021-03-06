@@ -10,7 +10,7 @@ const Project = ({ description, github, title, url, image, stack, index }) => {
       <Image fluid={image.childImageSharp.fluid} className="project-img" />
       <div className="project-info">
         <span className="project-number">0{index + 1}.</span>
-        <h3>{title}</h3>
+        <h3>{title || "defaul title"}</h3>
         <p className="project-desc">
           {description}
         </p>
@@ -33,6 +33,13 @@ const Project = ({ description, github, title, url, image, stack, index }) => {
 }
 
 
-Project.propTypes = {}
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  stack: PropTypes.arrayOf(PropTypes.object).isRequired,
+  image: PropTypes.object.isRequired,  // image is an object
+}
 
 export default Project
