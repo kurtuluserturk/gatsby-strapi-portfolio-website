@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 import ReactMarkdown from "react-markdown"
-
+import SEO from "../components/SEO"
 
 const About = ({
   data: { allStrapiAbout: { nodes } }
@@ -14,6 +14,7 @@ const About = ({
   console.log(stack)
   return (
     <Layout>
+      <SEO title="About" description="this is about page" />
       <section className="about-page">
         <div className="section-center about-center">
           <Image fluid={image.childImageSharp.fluid} className="about-img" />

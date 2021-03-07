@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Kurtulus Portfolio",
+    title: "Kurtulus",
     description: "This is Kurtulus Portfolio Site",
     author: "@kurtulus",
     siteUrl: "https://kurtulus-erturk.netlify.app",
@@ -28,8 +28,7 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
-        //   contentTypes : [`jobs`, `projects`, `blogs`],
-        //   singleTypes : [`about`]
+
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         contentTypes: [`jobs`, `projects`, `blogs`],   // We use them for graphql
         singleTypes: [`about`]
