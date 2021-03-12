@@ -1,3 +1,7 @@
+# Website link of the project
+
+https://kurtulus-erturk.netlify.app/
+
 ## Setup Notes
 
 1. All components ready to go (including imports)

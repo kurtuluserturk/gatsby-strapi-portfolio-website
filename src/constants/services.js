@@ -6,18 +6,18 @@ export default [
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "web development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `Client-focused, customer-centric, creating website solutions that deliver tangible business results, I help brands the ever-changing digital landscape.`,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
     title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `I provide UI design & products for web.`,
   },
   {
     id: 3,
     icon: <FaGamepad className="service-icon" />,
     title: "game development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `If there’s one thing more important than passion to a game developer, it’s creativity. Without it, it’s impossible to help create captivating gameplay and worlds for others to enjoy.`,
   },
 ]
